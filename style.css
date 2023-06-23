@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    width: 100%;
+    height: 110px;
+}
+.logo{
+    height: 100px;
+    width: 190px;
+}
+.container{ 
+    background: #674BB1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding-left: 90px;
+    padding-right: 90px;
+    background-image: url(images/bg-desktop.svg);
+}
+.card{
+    width: 1350px;
+    height: auto;
+    display: flex;
+}
+.left{
+    width: 55%;
+    height: 100%;
+    padding-top: 30px;
+}
+.right{
+    width: 45%;
+    height: 100%;
+    padding-top: 90px;
+    padding-left: 15px;
+}
+.abouthuddle{
+    font-size: 50px;
+    color: white;
+    padding-bottom: 20px;
+}
+.description{
+    font-size: 21.5px;
+    color: rgb(255, 255, 255, 0.7);
+    padding-bottom: 18px;
+}
+.button{
+    width: 200px;
+    height: 50px;
+    background: white;
+    color: #674BB1;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 1px 10px 20px rgb(0, 0, 0, 0.2);
+}
+.button:hover{
+    background: #E980E7;
+    color: white;
+    transition: all 2s;
+ 
+ }
+ .footer{
+    height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+ }
+ .social-handle{
+    filter: invert(100%);
+    height: 50px;
+    width: 50px;
+    padding-left: 15px;
+    transition: fill 0.3s ease;
+    cursor: pointer;
+ }
+ a{
+    cursor: pointer;
+ }
+ .social-handle:hover{
+    fill: purple;
+ }
+
+ @media only screen and (max-width: 768px) {
+    .container{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        background-image: url(images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 55%;
+        padding: 40px;
+    }
+    .card{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .left{
+        height: auto;
+        width: 100%;
+    }
+    .left-image{
+        width: 100%;
+        height: auto;
+    }
+    .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding-bottom: 45px;
+    }
+    .abouthuddle{
+        text-align: center;
+        font-size: 28px;
+    }
+    .description{
+        text-align: center;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .button{
+        width: 250px;
+    }
+    .footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+ }
+  
+  
